@@ -1,0 +1,125 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(82, 82, 82);
+    background-image: url(images/night-sky-17-1553444362.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+
+    margin-left: clamp(10px, 5vw, 300px);
+    margin-right: clamp(10px, 5vw, 300px);
+    width: auto;
+    
+}
+
+
+nav{
+    position: relative;
+    margin: 100px auto 0;
+    width: 590px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 0;
+    background-color: rgba(152, 181, 246, 0.238);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    text-align: center;
+    
+}
+
+main {
+   
+    height: 400px;
+    text-align: center;
+    padding-top: 80px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+footer{
+    background-color: rgba(152, 181, 246, 0.238);
+    height: 300px;
+}   
+
+h1{
+    font-size: clamp(20px, 5vw, 60px);
+    color: white;
+    font-family: Gill Sans, 'arial', sans-serif;
+}
+
+p{
+    color: white;
+    font-size:clamp(.5rem, 5vw, 1.6rem);
+    font-family: Cambria, 'arial', sans-serif;
+}
+
+a{
+  color:white;  
+  font-family: Cambria, 'arial', sans-serif;
+}
+ 
+.white{
+    filter:invert(100%);
+    padding-top: 10px;
+}
+nav a{
+    font-size: 18px;
+    line-height:40px;
+    text-decoration: none;
+    position:relative;
+    z-index:1;
+    display: inline-block;
+    text-align: center;
+}
+
+a:nth-child(1){
+    width:100px;
+}
+nav.start-home, a:nth-child(1):hover~.animation{
+    width:100px;
+    left:0;
+}
+a:nth-child(2){
+    width:110px;
+}
+nav.start-about, a:nth-child(2):hover~.animation{
+    width:110px;
+    left:100px;
+}
+a:nth-child(3){
+    width:100px;
+}
+nav.start-portfolio, a:nth-child(3):hover~.animation{
+    width:100px;
+    left:210px;
+}
+a:nth-child(4){
+    width:160px;
+}
+nav.start-testimonials, a:nth-child(4):hover~.animation{
+    width:160px;
+    left:310px;
+}
+a:nth-child(5){
+    width:120px;
+}
+nav.start-contact, a:nth-child(5):hover~.animation{
+    width:120px;
+    left:470px;
+}
+
+nav .animation{
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: #52c6af7e;
+    width: 100px;
+    border-radius: 8px;
+    transition:all .25s ease 0s;
+}

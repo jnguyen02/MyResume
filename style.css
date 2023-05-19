@@ -8,15 +8,17 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.9;
 }
 
 .container{
 
     margin-left: clamp(10px, 5vw, 300px);
     margin-right: clamp(10px, 5vw, 300px);
-    width: auto;
+    width:auto;
     
 }
+
 
 
 nav{
@@ -36,9 +38,9 @@ main {
    
     height: 400px;
     text-align: center;
-    padding-top: 80px;
-    margin-right: 300px;
-    margin-left: 300px;
+    padding-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 footer{
@@ -68,7 +70,7 @@ a{
     padding-top: 10px;
 }
 nav a{
-    font-size: 18px;
+    font-size: clamp(12px, 3vw, 18px);
     line-height:40px;
     text-decoration: none;
     position:relative;
